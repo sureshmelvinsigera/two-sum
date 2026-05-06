@@ -1,82 +1,103 @@
-# Two Sum
+# Two Sum — Candidate Guide
 
-This is the most common coding interview question you'll encounter. If you can't solve this one confidently, stop and master it before moving on.
+You're about to do a mock interview. Your partner has the problem and will present it to you. This guide is about **how to behave** during the interview, not about the answer.
 
----
-
-## The Problem
-
-You're given a list of integers and a target number. Find the **two numbers** in the list that add up to the target, and return their **indices** (positions), not the numbers themselves.
-
-There will always be exactly one valid answer, and you can't use the same element twice.
+**Do not look at the Interviewer Guide.**
 
 ---
 
-## Examples
+## Before You Start
 
-#### Example 1
-
-```
-Input: nums = [2, 7, 11, 15], target = 9
-Output: [0, 1]
-```
-
-Why? Because `nums[0] + nums[1]` is `2 + 7 = 9`.
-
-#### Example 2
-
-```
-Input: nums = [3, 2, 4], target = 6
-Output: [1, 2]
-```
-
-Why? Because `nums[1] + nums[2]` is `2 + 4 = 6`.
-
-#### Example 3
-
-```
-Input: nums = [3, 3], target = 6
-Output: [0, 1]
-```
-
-Why? Because `nums[0] + nums[1]` is `3 + 3 = 6`. Yes, duplicates can exist.
+- Have your editor or whiteboard ready.
+- Set a timer for 20–25 minutes.
+- Pretend this is real. The awkwardness is part of the practice.
 
 ---
 
-## Constraints
+## Step 1 — Listen and Clarify
 
-- The list has between 2 and 10,000 numbers.
-- Each number can be anywhere from -1,000,000,000 to 1,000,000,000.
-- The target follows the same range.
-- There is always exactly one valid pair.
+When your interviewer reads the problem, don't start coding immediately. Instead:
 
----
+- Repeat the problem back in your own words to confirm you understood it.
+- Ask at least one clarifying question. Some good ones:
+    - "Am I returning the numbers or their indices?"
+    - "Is the array sorted?"
+    - "Can there be negative numbers?"
+    - "Is there always exactly one answer?"
+    - "Can I use the same element twice?"
 
-## Things to Think About Before You Code
-
-- What's the simplest approach? What's its time complexity?
-- Can you do better than checking every possible pair?
-- What data structure lets you look things up fast?
-- How do you make sure you don't use the same element twice?
-- Are you returning **indices** or **values**? Read the problem again.
+Even if the answer seems obvious, asking shows you're careful.
 
 ---
 
-## Starter Code
+## Step 2 — Think Out Loud
 
-```python
-def two_sum(nums, target):
-    # your code here
-    pass
-```
+This is the most important part. The interviewer cannot read your mind.
+
+- Start by describing the simplest approach you can think of, even if it's slow.
+- Say its time complexity out loud.
+- Then ask yourself (out loud): "Can I do better?"
+- If you see a better approach, explain the idea in words before writing any code.
+
+#### Phrases That Sound Good
+
+- "The brute force approach would be..."
+- "That's O(n²), which isn't ideal. Let me think about how to bring that down."
+- "If I had a way to look up values in O(1)..."
+- "Let me walk through an example before I code this."
+
+#### Phrases to Avoid
+
+- "I've seen this before." (Even if you have, walk through it like you're solving it.)
+- "I don't know." (Instead say "Let me think about this for a moment.")
+- Nothing. (Silence is the worst thing in an interview.)
 
 ---
 
-## How to Know You've Nailed It
+## Step 3 — Code It
 
-- Your solution handles duplicates (Example 3).
-- You can explain the time and space complexity of your approach.
-- You can walk through an example out loud, step by step.
-- You considered more than one approach and can explain why one is better.
+- Write clean code. Use meaningful variable names.
+- Talk while you write. Explain each line briefly.
+- It's okay to pause and think. Just say "Give me a moment."
 
-Good luck.
+---
+
+## Step 4 — Test Your Solution
+
+When you finish coding, don't just say "done." Instead:
+
+- Pick a simple example and trace through your code line by line.
+- Check an edge case (like duplicates or a very short list).
+- If you find a bug, stay calm and fix it. Finding your own bugs is a good look.
+
+---
+
+## Step 5 — State the Complexity
+
+Without being asked, say:
+
+- "The time complexity is _____ because _____."
+- "The space complexity is _____ because _____."
+
+---
+
+## If You Get Stuck
+
+- Don't panic. Take a breath.
+- Go back to the example and work through it by hand on paper.
+- Ask yourself: "What am I doing manually that I could automate?"
+- It's okay to ask for a hint. Say: "Could you point me in the right direction?" This is way better than sitting in silence for 5 minutes.
+
+---
+
+## After the Mock Interview
+
+Talk with your partner about:
+
+- Where did you feel confident?
+- Where did you freeze up?
+- Did you talk enough, or did you go silent?
+- Could you clearly explain your complexity analysis?
+- What would you do differently next time?
+
+The goal isn't to get the answer right. The goal is to get comfortable with the process.
